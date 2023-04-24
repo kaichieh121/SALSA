@@ -1,0 +1,11 @@
+# Config to extract SALSA feature for TAU-NIGENS Spatial Sound Events (TNSSE) 2021 dataset
+data_dir: '/mnt/d/Projects/SELD/SALSA/dataset/data'
+feature_dir: '/mnt/d/Projects/SELD/SALSA/dataset/features'
+data:
+  format: 'mic' # 'foa' | 'mic'
+  fs: 24000
+  n_fft: 512
+  win_len: 512
+  hop_len: 300  # 300 for 12.5ms for n_fft = 512; 150 for n_fft = 256
+  fmin_doa: 50
+  fmax_doa: 4000  # 'foa': 9000; 'mic': 4000
